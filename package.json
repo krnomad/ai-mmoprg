@@ -1,0 +1,25 @@
+{
+  "name": "ai-mmoprg",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Initial TypeScript monorepo scaffold for MMO project",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present --parallel",
+    "dev:client": "npm run dev --workspace @ai-mmoprg/client",
+    "dev:server": "npm run dev --workspace @ai-mmoprg/server",
+    "dev:admin": "npm run dev --workspace @ai-mmoprg/admin",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
