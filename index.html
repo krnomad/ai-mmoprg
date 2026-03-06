@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MMORPG Prototype Client</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="toolbar">
+        <label>
+          Server
+          <input id="serverUrl" type="text" value="ws://localhost:8080/ws" />
+        </label>
+        <button id="connectBtn">Connect</button>
+        <button id="spectatorBtn" aria-pressed="false">Spectator: Off</button>
+        <span id="status">Disconnected</span>
+      </section>
+
+      <section class="viewport-wrap">
+        <canvas id="gameCanvas" width="960" height="544"></canvas>
+      </section>
+
+      <section class="chat">
+        <h2>Chat</h2>
+        <ul id="chatLog"></ul>
+        <form id="chatForm">
+          <input id="chatInput" type="text" placeholder="Say something..." maxlength="140" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #11151c;
+  color: #eaf1ff;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input,
+button {
+  background: #1f2430;
+  color: #eaf1ff;
+  border: 1px solid #384457;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#status {
+  margin-left: auto;
+  font-size: 0.92rem;
+  opacity: 0.9;
+}
+
+.viewport-wrap {
+  border: 1px solid #384457;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#gameCanvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #1a2331;
+}
+
+.chat {
+  border: 1px solid #384457;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.chat h2 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+#chatLog {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 140px;
+  max-height: 220px;
+  overflow: auto;
+  display: grid;
+  gap: 4px;
+}
+
+#chatLog li {
+  background: #151c27;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 0.92rem;
+}
+
+#chatForm {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+#chatInput {
+  flex: 1;
+}
