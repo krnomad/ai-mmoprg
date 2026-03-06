@@ -1,0 +1,11 @@
+{
+  "name": "ai-mmoprg",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run -w @ai-mmoprg/protocol build",
+    "typecheck": "npm run -w @ai-mmoprg/protocol typecheck"
+  }
+}
